@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Basica de Git</title>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <h2 class="title" style="color: black;">¡Bienvenidos a la guia básica de Git!</h2>
+        <p class="container">
+            En el siguiente recorrido te mostraré los comandos base de Git
+            que te serviran para crear, modificar y guardar tu propio repositorio
+            ya sea localmente o en la nube.
+        </p>
+    </div>
+    <!--Head-->
+    <div class="container">
+        <div class="columns">
+            <div class="column is-5">
+                <h3 class="sub subtitle">git init</h3>
+                <p>
+                    Este comando sirve para crear un nuevo repositorio de manera
+                    local.
+                </p>
+            </div>
+            <div class="column">
+                <img src="images/git_init.jpg" alt="git_init.jpg">
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-5">
+                <h3 class="sub subtitle">git status</h3>
+                <p>
+                    git status muestra los cambios que se han realizado en el
+                    directorio de trabajo. Por ejemplo haber añadido o modificado archivos.
+                    Cuando los archivos están en rojo no se han guardado los cambios, para
+                    eso esta el comando siguiente.
+                </p>
+            </div>
+            <div class="column">
+                <img src="images/git_status.png" alt="git_status.jpg">
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-5">
+                <h3 class="sub subtitle">git add .</h3>
+                <p>
+                    Se utiliza para agregar todos los cambios para el siguiente commit.
+                    Para agregar sólo un archivo se utiliza el nombre del fichero: <strong>git add index.html</strong>.
+                </p>
+            </div>
+            <div class="column">
+                <img src="images/git_add.png" alt="git_add.jpg">
+            </div>
+        </div>
+        <div class="columns">
+            <h3 class="sub subtitle">git log</h3>
+            <p>
+                Muestra todos los commits realizados anteriormente.
+            </p>
+        </div>
+        <div class="columns">
+            <h3 class="sub subtitle">git commit</h3>
+            <p>
+                Se crea un commit con todos los cambios agregados en git add.
+                Ejemplo: <strong>git commit -m "Mi primer commit"</strong>
+            </p>
+        </div>
+        <div class="columns">
+            <h3 class="sub subtitle">git push</h3>
+            <p>
+                git push permite guardar todos los cambios de manera remota.
+            </p>
+        </div>
+        <div>
+            <h1 class="sub subtitle">Crea un nuevo repositorio</h1>
+            <p>
+                Imagina que estas en una carpeta de proyecto con un archivo index.html.
+                Crea un repositorio local, mira el estado del repositorio, añade index.html y vuelve a mirar el estado
+                del repositorio.
+            </p>
+            <div class="console">
+                <span>Your_Directory $ </span><input type="text" name="" id="" placeholder="git help">
+                <div class="output">
+                    git init: inicializa el repositorio
+                    <br>
+                    git add: agrega cambios al repositorio
+                    <br>
+                    git status: muestra los cambios realizados
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Practice-->
+    </div>
+    <!--Container-->
+    <footer class="footer">Holi</footer>
+</body>
+
+</html>
